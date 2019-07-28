@@ -1,1 +1,392 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="Lindsey, Thompson, Lindsey Thompson, UT, University of Texas at Austin, UTCS, Austin, Texas, computer science, design, development, software, websites, web design, web, web development, marketing, strategy, online, online strategy, SEO, search engine optimization, small business" name="Keywords" />
+
+    <title>Lindsey Thompson</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="animate.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="shortcut icon" type="image" href="images/dot2.png" />
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha384-rY/jv8mMhqDabXSo+UCggqKtdmBfd3qC2/KvyTDNQ6PcUJXaxK1tMepoQda4g5vB" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="wow.min.js"></script>
+</head>
+
+<script>
+  new WOW().init();
+  $(function() {
+    console.log( "ready!" );
+    $(window).scroll(function() {
+      $(".top-tag").css("opacity", 1 - $(window).scrollTop() / 450);
+      if ($(".top-tag").css("opacity") == 0){
+          jQuery('#top').hide();
+      }
+      else {
+          jQuery('#top').show();
+      }});
+    $(".big-btn").click(function() {
+      if ($(window).width() > 991) {
+          console.log("hello");
+          $('html,body').animate({scrollTop: $("#portfolio-start").offset().top}, 'slow');
+      }
+      else {
+          console.log("hello");
+          $('html,body').animate({scrollTop: $("#portfolio-start-small").offset().top},'slow');
+      }})
+  });
+</script>
+
+<body>
+<div class="top-tag"id="top">
+
+  <!-- NAV BAR -->
+
+  <nav class="navbar navbar-fixed-top" role="navigation">
+    <div class="nav-container">
+      <div class="navbar-header">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="./index.html" class="nav-link" style="color: #252525; padding-left: 0; "></a>
+          </li>
+        </ul>
+      </div>
+      <div class="navbar-right">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="./index.html" class="nav-link" style="color: #252525; padding-left: 0; ">WORK</a>
+          </li>
+          <li>
+            <a href="./images/lindsey-thompson-resume-2019.pdf" target="_blank" class="nav-link">RESUME</a>
+          </li>
+          <li>
+            <!-- <a href="./about.html" class="nav-link" style="padding-right: 0;">ABOUT</a> -->
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- INTRO -->
+
+  <div class="home-top-block navbar-fixed-top">
+      <h1 class="wow fadeIn" data-wow-delay="0.5s" data-wow-duration="1.25s">Lindsey Thompson</h1>
+      <p class="wow fadeIn home-sentence" data-wow-delay="1.25s" data-wow-duration="1.25s" style="max-width: 900px; width: auto;">
+          Hello! I'm Lindsey - a designer and developer focusing on UX Design and Front End Development. I’m currently working as an Associate UX Designer at the Walt Disney Company in Glendale, CA.
+      </p>
+      <button class="btn big-btn wow fadeInUp" data-wow-delay="2s" data-wow-duration="1.25s" type="button">Check out my work</button>
+  </div>
+
+  <!-- ***** CHANGE ***** -->
+  <img class="wow fadeIn" src="images/watercolor-bg.png" style="overflow:hidden; width: 100%; position: fixed; left: 50%; transform: translate(-50%, 0); bottom: 0; min-width: 900px; display: block;">
+</div>
+
+<div style="overflow-x:hidden; background-color: #fcfcfc;">
+  <div style="overflow-x:hidden; margin: 0 auto; max-width: 1450px; background-color:white; box-shadow: 0 10px 40px -16px rgba(0, 0, 0, .2) ">
+
+    <!-- PROJECT WALLER CREEK -->
+
+    <section id="portfolio-start" class="big-section big-section-slack">
+      <div class=" element" style=" margin-left: 5%;">
+        <div class="row">
+          <div class="col-xs-4 vcenter left-block">
+            <h2 style="color: #a9abb2;">
+                UX Design
+            </h2>
+            <h1>
+                Project Waller Creek
+            </h1>
+            <p class="home-sentence" >
+                Reimagining the space around the largest body of water on UT campus.
+            </p>
+            <button class="btn " onclick="window.location.href='./template.html'">VIEW CASE STUDY</button>
+          </div>
+          <img src="images/creek-background.png" class="illustration">
+        </div>
+      </div>
+    </section>
+    <section id="portfolio-start-small" class="small-section">
+      <div class="small-div">
+        <img src="images/creek-background.png" class="small-img">
+        <div style="text-align: center; padding-left: 10%; padding-right: 10%; padding-top: 50px;">
+          <h2 style="color: #a9abb2;">
+              UX Design
+          </h2>
+          <h1>
+              Project Waller Creek
+          </h1>
+          <p class="home-small-sentence" style="text-align: center;">
+              Reimagining the space around the largest body of water on the UT campus.
+          </p>
+          <button class="btn " onclick="window.location.href='./template.html'">VIEW CASE STUDY</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATCHMEOUTSIDE.TODAY -->
+
+    <section class="big-section big-section-mrkt">
+      <div class=" element">
+        <img src="images/cmo-background.png" class="macbook left-macbook">
+        <div class="row">
+          <div class=" col-xs-4 col-xs-offset-7 home-block">
+            <h2 style="color: #a9abb2;">
+                UX Design & Front End Development
+            </h2>
+            <h1>
+                Catch Me Outside
+            </h1>
+            <p class="home-sentence" >
+                Encouraging people to get outside and explore the great city of Austin, TX.
+            </p>
+            <button class="btn " onclick="window.location.href='./template.html'">VIEW CASE STUDY</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="small-section">
+      <div class="small-div">
+        <img src="images/cmo-background.png" class="small-img">
+        <div style="text-align: center; padding-left: 10%; padding-right: 10%; padding-top: 50px;">
+          <h2 style="color: #a9abb2;">
+              UX Design & Front End Development
+          </h2>
+          <h1>
+              Catch Me Outside
+          </h1>
+          <p class="home-small-sentence" style="text-align: center;">
+              Encouraging people to get outside and explore the great city of Austin, TX.
+          </p>
+          <button class="btn " onclick="window.location.href='./template.html'">VIEW CASE STUDY</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- LAMP -->
+
+    <section class="big-section big-section-skm">
+      <div class="element" style="margin-left: 5%;">
+        <div class="row">
+          <div class="home-block left-block">
+            <h2 style="color: #a9abb2;">
+                UX Design & Mobile App Development
+            </h2>
+            <h1>
+                LAMP
+            </h1>
+            <p class="home-sentence" >
+                Designing and building an iOS mobile app to make roommate-finding simpler.
+            </p>
+            <button class="btn " onclick="window.location.href='./template.html'">VIEW CASE STUDY</button>
+          </div>
+        </div>
+        <img src="images/lamp-background.png" class="macbook-and-laptop">
+      </div>
+    </section>
+    <section class="small-section">
+      <div class="small-div">
+        <img src="images/lamp-background.png" class="small-img">
+        <div style="text-align: center; padding-left: 10%; padding-right: 10%; padding-top: 50px;">
+          <h2 style="color: #a9abb2;">
+              UX Design & Mobile App Development
+          </h2>
+          <h1>
+              LAMP
+          </h1>
+          <p class="home-small-sentence" style="text-align: center;">
+              Designing and building a iOS mobile app to make roommate-finding simpler.
+          </p>
+          <button class="btn " onclick="window.location.href='./template.html'">VIEW CASE STUDY</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- HAPPY PLANET PROJECT -->
+
+    <section class="big-section big-section-mrkt">
+      <div class=" element">
+        <img src="images/hpp-background.png" class="macbook left-macbook">
+        <div class="row">
+          <div class=" col-xs-4 col-xs-offset-7 home-block">
+            <h2 style="color: #a9abb2;">
+                UX Design & Web Development
+            </h2>
+            <h1>
+                happy planet project
+            </h1>
+            <p class="home-sentence" >
+                Teaching sustainable habits to users in a personalized and informative way.
+            </p>
+            <button class="btn " onclick="window.location.href='./template.html'">VIEW CASE STUDY</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="small-section">
+      <div class="small-div">
+        <img src="images/hpp-background.png" class="small-img">
+        <div style="text-align: center; padding-left: 10%; padding-right: 10%; padding-top: 50px;">
+          <h2 style="color: #a9abb2;">
+              UX / UI Design & Development
+          </h2>
+          <h1>
+              happy planet project
+          </h1>
+          <p class="home-small-sentence" style="text-align: center;">
+              Teaching sustainable habits to users in a personailzed and informative way.
+          </p>
+          <button class="btn " onclick="window.location.href='./template.html'">VIEW CASE STUDY</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEED -->
+
+    <section class="big-section big-section-amex">
+      <div class="element" style="margin-left: 5%;">
+        <div class="row">
+          <div class="home-block left-block">
+            <h2 style="color: #a9abb2;">
+                UX Design
+            </h2>
+            <h1>
+                feed
+            </h1>
+            <p class="home-sentence" >
+                Discovering a better way for university students to find food on campus.
+            </p>
+            <button class="btn " onclick="window.location.href='./template.html'">VIEW CASE STUDY</button>
+          </div>
+        </div>
+        <img src="images/feed-background.png" class="macbook">
+      </div>
+    </section>
+    <section class="small-section">
+      <div class="small-div">
+        <img src="images/feed-background.png" class="small-img">
+        <div style="text-align: center; padding-left: 10%; padding-right: 10%; padding-top: 50px;">
+          <h2 style="color: #a9abb2;">
+              UX Design
+          </h2>
+          <h1>
+              feed
+          </h1>
+          <p class="home-small-sentence" style="text-align: center;">
+              Discovering a better way for university students to find food on campus.
+          </p>
+          <button class="btn " onclick="window.location.href='./template.html'">VIEW CASE STUDY</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROBINHOOD REDESIGN -->
+
+    <section class="big-section big-section-mrkt">
+      <div class=" element">
+        <img src="images/robinhood-background.png" class="macbook left-macbook">
+        <div class="row">
+          <div class=" col-xs-4 col-xs-offset-7 home-block">
+            <h2 style="color: #a9abb2;">
+                UX / UI Re-Design
+            </h2>
+            <h1>
+                Robinhood AI Exercise
+            </h1>
+            <p class="home-sentence" >
+                Enhancing the popular investment app, Robinhood, with artificial intelligence.
+            </p>
+            <button class="btn " onclick="window.location.href='./template.html'">VIEW CASE STUDY</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="small-section">
+      <div class="small-div">
+        <img src="images/robinhood-background.png" class="small-img">
+        <div style="text-align: center; padding-left: 10%; padding-right: 10%; padding-top: 50px;">
+          <h2 style="color: #a9abb2;">
+              UX/UI Re-Design
+          </h2>
+          <h1>
+              Robinhood AI Exercise
+          </h1>
+          <p class="home-small-sentence" style="text-align: center;">
+              Enhancing the popular investment app, Robinhood, with artificial intelligence.
+          </p>
+          <button class="btn " onclick="window.location.href='./template.html'">VIEW CASE STUDY</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- IBM DESIGN -->
+
+    <section class="big-section big-section-amex">
+      <div class="element" style="margin-left: 5%;">
+        <div class="row">
+          <div class="home-block left-block">
+            <h2 style="color: #a9abb2;">
+                UX Design
+            </h2>
+            <h1>
+                IBM Design
+            </h1>
+            <p class="home-sentence" >
+                Utilizing IBM Watson’s IOT capabilities to radically improve the industrial washing machine industry.
+            </p>
+            <button class="btn " onclick="window.location.href='./template.html'">VIEW CASE STUDY</button>
+          </div>
+        </div>
+        <img src="images/ibm-background.png" class="macbook">
+      </div>
+    </section>
+    <section class="small-section">
+      <div class="small-div">
+        <img src="images/ibm-background.png" class="small-img">
+        <div style="text-align: center; padding-left: 10%; padding-right: 10%; padding-top: 50px;">
+          <h2 style="color: #a9abb2;">
+              UX Design
+          </h2>
+          <h1>
+              IBM Design
+          </h1>
+          <p class="home-small-sentence" style="text-align: center;">
+              Utilizing IBM Watson’s IOT capabilities to radically improve the industrial washing machine industry.
+          </p>
+          <button class="btn " onclick="window.location.href='./template.html'">VIEW CASE STUDY</button>
+        </div>
+      </div>
+    </section>
+
+
+  </div>
+</div>
+
+<div>
+    <div class="nav-container">
+      <div class="navbar-header">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="./index.html" class="nav-link" style="color: #252525; padding-left: 0; ">© 2019 LINDSEY THOMPSON</a>
+          </li>
+        </ul>
+      </div>
+      <div class="navbar-right">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="./index.html" class="nav-link" style="color: #252525; padding-left: 0; "><span style="color: #a9abb2">Email:</span> lindseyatx97@gmail.com</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+</div>
+
+</body>
+</html>
