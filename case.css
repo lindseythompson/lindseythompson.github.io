@@ -25,6 +25,11 @@ body{
     margin-left: 15%;
     margin-right:15%;
 }
+
+.small-section{
+    display: none;
+}
+
 @media(max-width: 767px){
     .la-hacks-video{
         margin-left: 5%;
@@ -33,7 +38,14 @@ body{
     .big-nav{
         display: none;
     }
+    .big-section{
+        display: none;
+    }
+    .small-section{
+        display: inline;
+    }
 }
+
 @media (min-width: 0px) {
     .navbar-nav {
         width: 100%;
@@ -170,28 +182,26 @@ h2{
     -webkit-font-smoothing: antialiased;
     text-align: left;
     color: #252525;;
-
     line-height: 55px;
 }
 h3{
     font-family: Nunito;
     font-weight: 900;
-    font-size: 20px;
+    font-size: 24px;
     -webkit-font-smoothing: antialiased;
     text-align: left;
     color: #252525;
     padding-top: 20px;
-    line-height: 30px;
+    line-height: 40px;
 }
 h4{
     font-family: Nunito;
-    font-weight: 900;
-    font-size: 24px;
+    font-weight: 700;
+    font-size: 18px;
     -webkit-font-smoothing: antialiased;
     text-align: left;
     padding-top: 10px;
-    padding-bottom: 10px;
-
+    line-height: 30px;
 }
 h5{
     font-family: Nunito, sans-serif;
