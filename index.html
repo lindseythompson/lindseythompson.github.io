@@ -23,8 +23,8 @@
 
 <script>
   new WOW().init();
+  //JS Source Code Credit: Rohan Kapoor @rohanneilkapoor
   $(function() {
-    console.log( "ready!" );
     $(window).scroll(function() {
       $(".top-tag").css("opacity", 1 - $(window).scrollTop() / 450);
       if ($(".top-tag").css("opacity") == 0){
@@ -35,11 +35,9 @@
       }});
     $(".big-btn").click(function() {
       if ($(window).width() > 991) {
-          console.log("hello");
           $('html,body').animate({scrollTop: $("#portfolio-start").offset().top}, 'slow');
       }
       else {
-          console.log("hello");
           $('html,body').animate({scrollTop: $("#portfolio-start-small").offset().top},'slow');
       }})
   });
@@ -55,20 +53,20 @@
       <div class="navbar-header">
         <ul class="nav navbar-nav">
           <li>
-            <a href="./index.html" class="nav-link" style="color: #252525; padding-left: 0; "></a>
+            <a href="./index.html" class="nav-link" style="color:#252525;padding-left:0; "></a>
           </li>
         </ul>
       </div>
       <div class="navbar-right">
         <ul class="nav navbar-nav">
           <li>
-            <a href="./index.html" class="nav-link" style="color: #252525; padding-left: 0; ">WORK</a>
+            <a href="./index.html" class="nav-link" style="color:#252525;padding-left:0; ">WORK</a>
           </li>
           <li>
             <a href="./images/lindsey-thompson-resume-2019.pdf" target="_blank" class="nav-link">RESUME</a>
           </li>
           <li>
-            <!-- <a href="./about.html" class="nav-link" style="padding-right: 0;">ABOUT</a> -->
+            <a href="./about.html" class="nav-link" style="padding-right: 0;">ABOUT</a>
           </li>
         </ul>
       </div>
@@ -78,24 +76,24 @@
   <!-- INTRO -->
 
   <div class="home-top-block navbar-fixed-top">
-      <h1 class="wow fadeIn" data-wow-delay="0.5s" data-wow-duration="1.25s">Lindsey Thompson</h1>
-      <p class="wow fadeIn home-sentence" data-wow-delay="1.25s" data-wow-duration="1.25s" style="max-width: 900px; width: auto;">
+      <h1 class="wow fadeIn" data-wow-delay="0.2s" data-wow-duration="1s">Lindsey Thompson</h1>
+      <p class="wow fadeIn home-sentence" data-wow-delay="0.2s" data-wow-duration="1s" style="max-width: 900px; width: auto;">
           Hello! I'm Lindsey - a designer and developer focusing on UX Design and Front End Development. I’m currently working as an Associate UX Designer at the Walt Disney Company in Glendale, CA.
       </p>
-      <button class="btn big-btn wow fadeInUp" data-wow-delay="2s" data-wow-duration="1.25s" type="button">Check out my work</button>
+      <button class="btn big-btn wow fadeIn" data-wow-delay="0.2s" data-wow-duration="1s" type="button">Check out my work</button>
   </div>
 
   <!-- ***** CHANGE ***** -->
   <!-- <img class="wow fadeIn" src="images/watercolor-bg.png" style="overflow:hidden; width: 100%; position: fixed; left: 50%; transform: translate(-50%, 0); bottom: 0; min-width: 900px; display: block;"> -->
 </div>
 
-<div style="overflow-x:hidden; background-color: #fcfcfc;">
-  <div style="overflow-x:hidden; margin: 0 auto; max-width: 1450px; background-color:white; box-shadow: 0 10px 40px -16px rgba(0, 0, 0, .2) ">
+<div>
+  <div>
 
     <!-- PROJECT WALLER CREEK -->
 
     <section id="portfolio-start" class="big-section">
-      <div class=" element" style=" margin-left: 5%;">
+      <div class="element" style="margin-left:5%;">
         <div class="row">
           <div class="col-xs-4 vcenter left-block">
             <h2 style="color: #a9abb2;">
@@ -107,7 +105,7 @@
             <p class="home-sentence" >
                 Reimagining the space around the largest body of water on UT campus.
             </p>
-            <button class="btn " onclick="window.location.href='./creek.html'">VIEW CASE STUDY</button>
+            <button class="btn" onclick="window.location.href='./creek.html'">VIEW CASE STUDY</button>
           </div>
           <img src="images/creek/creek-background.png" class="illustration">
         </div>
@@ -116,17 +114,17 @@
     <section id="portfolio-start-small" class="small-section">
       <div class="small-div">
         <img src="images/creek/creek-background.png" class="small-img">
-        <div style="text-align: center; padding-left: 10%; padding-right: 10%; padding-top: 50px;">
+        <div style="text-align:center;padding-left:10%;padding-right:10%;padding-top:50px;">
           <h2 style="color: #a9abb2;">
               UX Design
           </h2>
           <h1>
               Project Waller Creek
           </h1>
-          <p class="home-small-sentence" style="text-align: center;">
+          <p class="home-small-sentence" style="text-align:center;">
               Reimagining the space around the largest body of water on the UT campus.
           </p>
-          <button class="btn " onclick="window.location.href='./creek.html'">VIEW CASE STUDY</button>
+          <button class="btn" onclick="window.location.href='./creek.html'">VIEW CASE STUDY</button>
         </div>
       </div>
     </section>
@@ -138,7 +136,7 @@
         <img src="images/cmo/cmo-background.png" class="macbook left-macbook">
         <div class="row">
           <div class=" col-xs-4 col-xs-offset-7 home-block">
-            <h2 style="color: #a9abb2;">
+            <h2 style="color:#a9abb2;">
                 UX Design & Front End Development
             </h2>
             <h1>
@@ -289,7 +287,7 @@
 
     <!-- ROBINHOOD REDESIGN -->
 
-    <section class="big-section big-section-mrkt">
+    <section class="big-section">
       <div class=" element">
         <img src="images/robinhood/robinhood-background.png" class="macbook left-macbook">
         <div class="row">
@@ -328,7 +326,7 @@
 
     <!-- IBM DESIGN -->
 
-    <section class="big-section big-section-amex">
+    <section class="big-section">
       <div class="element" style="margin-left: 5%;">
         <div class="row">
           <div class="home-block left-block">
@@ -364,8 +362,6 @@
         </div>
       </div>
     </section>
-
-
   </div>
 </div>
 

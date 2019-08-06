@@ -89,10 +89,6 @@ span{
     z-index: 1;
     margin: 0;
 }
-.mrkt-block{
-
-    padding-left: 120px;
-}
 .right-block{
     padding-left: 60px;
 }
@@ -222,13 +218,11 @@ p{
 
 }
 
-
 button:hover.btn:hover {
     color: white;
     box-shadow: 0 15px 30px -10px rgba(0,0,0,.8);
     z-index: 10;
 }
-
 
 .btn:active,
 .btn:focus,
@@ -248,6 +242,13 @@ button:active{
     background-size: cover;
 }
 
+.about-container {
+  margin-top: 20px;
+}
+
+.about-sentence {
+  font-size: 1.675rem;
+}
 
 .element {
     position: relative;
@@ -363,7 +364,6 @@ button:active{
     .small-section{
         display: inline;
     }
-
 }
 
 .navbar-nav {
@@ -388,7 +388,6 @@ button:active{
     .navbar .navbar-collapse {
         text-align: center;
     }
-
 
     .navbar-nav>li>a {
         padding-top: 0px;
@@ -467,78 +466,10 @@ i:hover{
     cursor: pointer;
 }
 
-.fa-behance:before {
-    font-size: 15px;
-    content: "\f1b4";
-    line-height: 32px;
-    color: #7a7c80;
-}
-.fa-linkedin:before {
-    font-size: 15px;
-    content: "\f0e1";
-    line-height: 32px;
-    color: #7a7c80;
-}
-.fa-github:before {
-    font-size: 15px;
-    content: "\f09b";
-    line-height: 32px;
-    color: #7a7c80;
-}
 .vcenter {
     display: inline-block;
     vertical-align: middle;
     float: none;
-}
-.iphone-container{
-    background: url("images/slack_images/iphone.png");
-    background-size: auto 100%;                     /* <------ */
-    background-repeat:   no-repeat;
-    background-position: center center;
-}
-.iphone-container video{
-    width: 40%;
-    display: block;
-    margin: 0 auto;
-    padding-top: 11.43%;
-    padding-bottom: 11.43%;
-
-}
-.iphone-container .still-video{
-    width: 40%;
-    display: block;
-    margin: 0 auto;
-    padding-top: 11.43%;
-    padding-bottom: 11.43%;
-
-}
-@media(max-width:991px){
-    .iphone-container video{
-        width: 20%;
-        padding-top: 5.71%;
-        padding-bottom: 5.71%;
-
-    }
-    .iphone-container .still-video{
-        width: 20%;
-        padding-top: 5.71%;
-        padding-bottom: 5.71%;
-
-    }
-}
-@media(max-width:776px){
-    .iphone-container video{
-        width: 35%;
-        padding-top: 10%;
-        padding-bottom: 10%;
-
-    }
-    .iphone-container .still-video{
-        width: 35%;
-        padding-top: 10%;
-        padding-bottom: 10%;
-
-    }
 }
 
 .slack-border{

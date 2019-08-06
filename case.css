@@ -18,23 +18,12 @@ body{
 .navbar-nav {
     margin: 20px 0px
 }
-.big-nav{
-
-}
-.la-hacks-video{
-    margin-left: 15%;
-    margin-right:15%;
-}
 
 .small-section{
     display: none;
 }
 
 @media(max-width: 767px){
-    .la-hacks-video{
-        margin-left: 5%;
-        margin-right:5%;
-    }
     .big-nav{
         display: none;
     }
@@ -65,8 +54,6 @@ body{
     .navbar .navbar-collapse {
         text-align: center;
     }
-
-
     .navbar-nav>li>a {
         padding-top: 0px;
         padding-bottom: 0px;
@@ -111,14 +98,6 @@ a.sep-link:hover{
     border-bottom: none;
 }
 
-a.mrkt-link{
-    color: #252525;
-    border-bottom: 1px solid #252525;
-}
-a.mrkt-link:hover{
-    color: #252525;
-    border-bottom: none;
-}
 b{
     font-size: 18px;
     -webkit-font-smoothing: antialiased;
@@ -263,34 +242,6 @@ h5{
 .small-image{
     width: 60%;
 }
-.iphone-container{
-    background: url("images/slack_images/iphone.png");
-    background-size: auto 100%;                     /* <------ */
-    background-repeat:   no-repeat;
-    background-position: center center;
-}
-.bottom-video video{
-    height: 200px !important;
-    margin: 0 auto !important;
-    padding-top: 27px !important;
-    padding-bottom: 27px !important;
-}
-.iphone-container video{
-    width: 35%;
-    display: block;
-    margin: 0 auto;
-    padding-top: 10%;
-    padding-bottom: 10%;
-
-}
-.iphone-container .still-video{
-    width: 35%;
-    display: block;
-    margin: 0 auto;
-    padding-top: 10%;
-    padding-bottom: 10%;
-
-}
 
 @media(max-width:800px){
 
@@ -308,18 +259,6 @@ h5{
         padding-left: 15px;
         padding-right: 15px;
     }
-    .iphone-container video{
-        width: 50%;
-        padding-top: 14.3%;
-        padding-bottom: 14.3%;
-
-    }
-    .iphone-container .still-video{
-        width: 50%;
-        padding-top: 14.3%;
-        padding-bottom: 14.3%;
-
-    }
 }
 .description{
     font-size: 15px;
@@ -327,6 +266,7 @@ h5{
     font-weight: 900;
     color: #a9abb2;;
     text-transform: uppercase;
+    padding-top: 10px;
     padding-bottom: 40px;
     letter-spacing: 3px;
     -webkit-font-smoothing: antialiased;
@@ -355,16 +295,13 @@ h5{
     }
 }
 
-
 img{
     max-width: 700px;
     display: block;
     margin: 0 auto;
     width: 100%;
 }
-.aza{
-    max-width: 390px;
-}
+
 .btn {
     height: 50px;
     width: 160px;
@@ -379,7 +316,6 @@ img{
     text-transform: uppercase;
     box-shadow: 0 24px 46px -16px rgba(0, 0, 0, .8);
     z-index: 10;
-
 }
 
 .btn,.btn::after{
@@ -388,16 +324,13 @@ img{
     -o-transition: all 0.6s;
     transition: all 0.6s;
     z-index: 10;
-
 }
-
 
 button:hover.btn:hover {
     color: white;
     box-shadow: 0 15px 30px -10px rgba(0,0,0,.8);
     z-index: 10;
 }
-
 
 .btn:active,
 .btn:focus,
@@ -432,24 +365,6 @@ i:hover{
     cursor: pointer;
 }
 
-.fa-behance:before {
-    font-size: 15px;
-    content: "\f1b4";
-    line-height: 32px;
-    color: #7a7c80;
-}
-.fa-linkedin:before {
-    font-size: 15px;
-    content: "\f0e1";
-    line-height: 32px;
-    color: #7a7c80;
-}
-.fa-github:before {
-    font-size: 15px;
-    content: "\f09b";
-    line-height: 32px;
-    color: #7a7c80;
-}
 .image-holder {
     display:inline-block;
     position: relative;
@@ -524,9 +439,6 @@ i:hover{
     -o-transition: all 0.6s;
     transition: all 0.6s;
 }
-.small-fix{
-
-}
 @media(max-width:776px){
     .prev,.next{
         line-height: 180px;
@@ -547,8 +459,6 @@ i:hover{
         margin-top: 40px;
     }
 }
-.va{}
-
 .va.vertical-align {
     display: flex;
     flex-direction: row;
@@ -586,19 +496,6 @@ i:hover{
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
-}
-
-.waves{
-    overflow:hidden !important;
-    width: 100%;
-    position:absolute;
-    left: 50%;
-    transform: translate(-50%, 0);
-    bottom: 0;
-    min-width: 1100px;
-    display: block;
-    z-index: -40;
-    max-width: none !important;
 }
 
 .nav-container{
