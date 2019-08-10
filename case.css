@@ -5,10 +5,10 @@
     font-weight: 900;
 }
 html {
-    overflow-x: hidden;
+    overflow-x: scroll;
 }
 body{
-    overflow-x: hidden;
+    overflow-x: scroll;
 }
 
 .navbar{
@@ -21,6 +21,15 @@ body{
 
 .small-section{
     display: none;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    text-align: center;
 }
 
 @media(max-width: 767px){
